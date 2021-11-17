@@ -1,10 +1,10 @@
 #!/bin/bash
 
-git checkout ${BRANCH}
+git checkout ${GIT_BRANCH}
 
 git reset --hard HEAD
-git pull origin ${BRANCH}
+git pull origin ${GIT_BRANCH}
 
-echo "git ${BRANCH} pull completed"
+echo "git ${GIT_BRANCH} pull completed"
 
 python3 server/app.py
