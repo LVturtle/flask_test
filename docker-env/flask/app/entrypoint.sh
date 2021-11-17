@@ -1,8 +1,6 @@
 #!/bin/bash
 
-BRANCH="master"
-
-git checkout master
+git checkout ${BRANCH}
 
 git reset --hard HEAD
 git pull origin ${BRANCH}
