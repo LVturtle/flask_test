@@ -6,6 +6,9 @@ services :
         build :
             context : flask
             dockerfile : dockerfile
+        environment :
+            GIT_BRANCH : "main"
+            TZ : "asiz/Seoul"
         ports : 
             - "16007:16007"
         
