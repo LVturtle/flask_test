@@ -1,0 +1,10 @@
+version : '3'
+services : 
+    app :
+        image : flask
+        container_name : wookang_flask
+        build :
+            context : flask
+            dockerfile : dockerfile
+        ports : 
+            - "16007:16007"
