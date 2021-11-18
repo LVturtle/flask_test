@@ -9,7 +9,6 @@ services :
         environment :
             GIT_BRANCH : main
             TZ : Asia/Seoul
-            PGTZ : Asia/Seoul
         ports : 
             - "16007:16007"
         
