@@ -7,8 +7,8 @@ services :
             context : flask
             dockerfile : dockerfile
         environment :
-            GIT_BRANCH : main
-            TZ : "Asia/Seoul"
+            - GIT_BRANCH=main
+            - TZ=Asia/Seoul
         ports : 
             - "16007:16007"
         
